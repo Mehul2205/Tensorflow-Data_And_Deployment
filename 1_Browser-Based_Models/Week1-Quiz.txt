@@ -1,23 +1,23 @@
-Q1. 
-Sol. 
+Q1. What is the name of the API at the heart of TensorFlow.js which allows things like layers to be used?
+Sol. Core API
 
-Q2. 
-Sol. 
+Q2. How does TensorFlow.js use GPU acceleration in the browser?
+Sol. You access GPU using WebGL in the browser
 
-Q3. 
-Sol. 
+Q3. How can you use a TPU with TensorFlow.js?
+Sol. You can use Node.js on GCP and access TPU instances
 
-Q4. 
-Sol. 
+Q4. Which of the following lines of code will correctly add a single dense layer containing a single neuron that takes a numeric input to a model using JavaScript?
+Sol. model.add(tf.layers.dense({units: 1, inputShape: [1]}));
 
-Q5. 
-Sol. 
+Q5. When creating data to input to a model using Python you could use a numpy array. How would you do it in JavaScript?
+Sol. Use a tensor2d containing the data and the shape of the data
 
-Q6. 
-Sol. 
+Q6. If I train a model to detect a linear relationship (i.e. Y=2X-1), what line of code would output a prediction from that model for Y where X=10?
+Sol. alert(model.predict(tf.tensor2d([10], [1,1]))); 
 
-Q7. 
-Sol. 
+Q7. When training a model, if I want to log training status at the end of an epoch, what is the name of the callback event you want to capture?
+Sol. OnEpochEnd
 
 Q8. 
 Sol. 

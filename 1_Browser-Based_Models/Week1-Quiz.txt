@@ -19,5 +19,7 @@ Sol. alert(model.predict(tf.tensor2d([10], [1,1])));
 Q7. When training a model, if I want to log training status at the end of an epoch, what is the name of the callback event you want to capture?
 Sol. OnEpochEnd
 
-Q8. 
-Sol. 
+Q8. Given a set of Xs and Ys, how would you one-hot encode a label based on the text or ‘rock’, ‘paper’, ‘scissors’ ?
+Sol. trainingData.map(({xs, ys}) => {
+    const labels = [ ys.label == "rock" ? 1 : 0, ys.label == "paper" ? 1 : 0,  ys.label == "scissors" ? 1 : 0 ]
+} 

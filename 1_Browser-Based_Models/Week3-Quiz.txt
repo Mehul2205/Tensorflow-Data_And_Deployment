@@ -1,23 +1,23 @@
-Q1. 
-Sol. 
+Q1. When using the toxicity library, a statement will be labelled with 2 probabilities. What are they?
+Sol. The first is the probability value for whether or not the phrase is not an insult, and the second is the probability for whether or not it is
 
-Q2. 
-Sol. 
+Q2. If toxicity returns a probabilities list with values of [0.8, 0.2], what does that mean?
+Sol. We don’t know. The answer depends on something else
 
-Q3. 
-Sol. 
+Q3. How do you determine what type of toxicity is contained in a result from toxicity?
+Sol. It returns an array of answers, each one corresponding to a different type of toxicity
 
-Q4. 
-Sol. 
+Q4. When using mobilenet in js to classify an image, it can recognize up to 1000 types. How many predictions does it return by default?
+Sol. 3
 
-Q5. 
-Sol. 
+Q5. When converting Python-trained models to JSON to use in tensorflow.js, what is the package that you need to ‘pip install’ (assuming you already have installed tensorflow)
+Sol. tensorflowjs
 
-Q6. 
-Sol. 
+Q6. How do you convert a Python-trained model to JSON?
+Sol. Save it as a TensorFlow Saved Model, then use the tensorflowjs_convertor script in Python
 
-Q7. 
-Sol. 
+Q7. If you have a model that you’ve converted to JSON how do you load it into JavaScript?
+Sol. const model = await tf.loadLayersModel(MODEL_URL) 
 
-Q8. 
-Sol. 
+Q8. When you convert a Python-based model to JSON, how many files will you get?
+Sol. At least two: the model file, and a sharded collection of binary weight files that can have one or more files

@@ -1,23 +1,23 @@
-Q1. 
-Sol. 
+Q1. What HTML5 tag is used to show the contents of a webcam?
+Sol. <video>
 
-Q2. 
-Sol. 
+Q2. If I initialize a webcam object like this:
+Sol. async function init(){await webcam.setup();}
 
-Q3. 
-Sol. 
+Q3. If I want to create a model that uses transfer learning, with everything in mobilenet up to layer ‘foo’, and my layers afterwards, how do I do it? Assume this code was used to find layer ‘foo’
+Sol. return tf.model({inputs: mobilenet.inputs, outputs: layer.output});
 
-Q4. 
-Sol. 
+Q4. If I am transfer learning from a mobilenet, and I want to use my own dense layers after the mobilenet ones, what is the correct syntax to use at <INSERT CODE HERE>
+Sol. {inputShape: mobilenet.outputs[0].shape.slice(1)}
 
-Q5. 
-Sol. 
+Q5. If I am using a mobilenet with my own DNN for transfer learning in TensorFLow.js, how do I get a prediction for an image?
+Sol. Get a set of prediction embeddings from mobilenet and then pass them to your model.
 
-Q6. 
-Sol. 
+Q6. If you have a set of predictions returned from model.predict(something) and you want to take the one with the largest probability, how do you do it?
+Sol. predictions.as1D().argMax(), then look at the 0th element.
 
-Q7. 
-Sol. 
+Q7. If you already have a function called predict() in a class called ‘foo’ which captures a frame from the webcam and predicts it, what’s the best way to call it, particularly if you plan to do continuous predictions?
+Sol. tf.tidy(() => foo.predict());
 
-Q8. 
-Sol. 
+Q8. Why is transfer learning a huge advantage, particularly when training in the browser?
+Sol. It allows you to use already-learned convolutions for distinguishing features, saving training time.
